@@ -10,4 +10,11 @@ module.exports = {
     darkTheme: false,
     themes: ['light'],
   },
+  theme: {
+    screens: {
+      mobile: '768px',
+      tablet: '1024px',
+      desktop: '1280px',
+    },
+  },
 }

@@ -3,6 +3,7 @@ import { Metadata } from 'next'
 import localFont from 'next/font/local'
 import './globals.css'
 import 'normalize.css'
+import { IMAGE_PREFIX } from '@/app/utils/config'
 
 const rootFont = localFont({
   src: './fonts/Pretendard/PretendardVariable.woff2',
@@ -30,8 +31,14 @@ export const metadata: Metadata = {
       },
     ],
   },
+  twitter: {
+    card: 'summary_large_image',
+    site: 'https://cgbogam.github.io/cgbogam-web',
+    creator: '청구보감',
+    images: 'https://cgbogam.github.io/cgbogam-web/assets/logo.png',
+  },
   icons: {
-    icon: '/cgbogam-web/favicon.ico',
+    icon: `${IMAGE_PREFIX}/favicon.ico`,
   },
 }
 
