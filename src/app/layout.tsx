@@ -11,12 +11,24 @@ const rootFont = localFont({
 
 export const metadata: Metadata = {
   title: '청구보감',
-  description: '청구보감',
+  description: '청구를 하기위해 모인 사람들',
   viewport: {
     width: 'device-width',
     initialScale: 1,
     userScalable: false,
     maximumScale: 1,
+  },
+  openGraph: {
+    type: 'website',
+    url: 'https://cgbogam.github.io/cgbogam-web',
+    title: '청구보감',
+    description: '청구를 하기위해 모인 사람들',
+    siteName: '청구보감',
+    images: [
+      {
+        url: 'https://cgbogam.github.io/cgbogam-web/assets/logo.png',
+      },
+    ],
   },
   icons: {
     icon: '/cgbogam-web/favicon.ico',
