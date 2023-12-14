@@ -1,14 +1,11 @@
-import { IMAGE_PREFIX } from '@/app/utils/config'
-
 export default function Home() {
-  const bgImageClass = `bg-[url('/assets/main-banner-mo.jpg')] tablet:bg-[url('/assets/main-banner-pc.jpg')]`
+  const bgImageClass = `bg-[url('https://cgbogam.github.io/cgbogam-web/assets/main-banner-mo.jpg')] tablet:bg-[url('https://cgbogam.github.io/cgbogam-web/assets/main-banner-pc.jpg')] bg-no-repeat bg-center bg-cover`
 
   return (
     <main className={'w-full'}>
       {/* 메인 배너*/}
       <section
-        className={`relative h-[calc(100vh_-_64px)] flex justify-start items-center min-w-[300px] mx-auto px-[32px] bg-no-repeat bg-center bg-cover ${bgImageClass}`}
-        // style={{ backgroundImage: `url('${IMAGE_PREFIX}/assets/main-banner-mo.jpg')` }}
+        className={`relative h-[calc(100vh_-_64px)] flex justify-start items-center min-w-[300px] mx-auto px-[32px] ${bgImageClass}`}
       >
         <div className={'absolute inset-0 bg-black opacity-60'}></div>
         <div
