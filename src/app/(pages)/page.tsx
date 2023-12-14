@@ -5,23 +5,23 @@ export default function Home() {
     <main className={'w-full'}>
       {/* 메인 배너*/}
       <section
-        className={`relative h-[calc(100vh_-_64px)] flex justify-start items-center min-w-[300px] mx-auto px-[32px] ${bgImageClass}`}
+        className={`relative h-[calc(100vh_-_64px)] flex justify-start items-center min-w-[300px] mx-auto px-[80px] ${bgImageClass}`}
       >
-        <div className={'absolute inset-0 bg-black opacity-60'}></div>
+        <div className={'absolute inset-0 bg-black opacity-70'}></div>
         <div
           className={
             'relative flex flex-col text-white z-10 text-center mx-auto tablet:mx-0 tablet:text-left'
           }
         >
-          <h2 className={'text-[clamp(1.6rem,6vw,4.5rem)]'}>
+          <h2 className={'text-[clamp(1.6rem,6vw,4.5rem)] leading-1'}>
             우리병원{' '}
             <strong className={'text-amber-600 text-[clamp(2.0rem,6.3vw,4.8rem)]'}>진료비</strong>가
             <br /> 누락되고있지 않나요?
           </h2>
-          <p className={'mt-[32px] text-[clamp(1rem,3vw,4.5rem)] tablet:max-w-none'}>
+          <p className={'mt-[32px] text-[clamp(1rem,1.5vw,2.4rem)] tablet:max-w-none'}>
             <span
               className={
-                'underline decoration-2 underline-offset-4 text-[clamp(1.2rem,3.4vw,4.5rem)] mr-[4px] leading-[2rem]'
+                'underline decoration-2 underline-offset-4 text-[clamp(1.2rem,1.8vw,2.8rem)] mr-[4px] leading-[2rem]'
               }
             >
               청구보감
