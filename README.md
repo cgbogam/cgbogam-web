@@ -1,2 +1,1 @@
-# cgbogam-web
-청구보감 Static Web 사이트
+# 청구보감 Web 사이트
