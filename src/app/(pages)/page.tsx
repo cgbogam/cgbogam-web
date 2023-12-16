@@ -3,7 +3,7 @@ import HomeClient from '@/app/(pages)/page.client'
 
 export default function Home(): React.JSX.Element {
   return (
-    <main className={'w-full'}>
+    <main className={'w-full overscroll-none'}>
       <HomeClient />
     </main>
   )

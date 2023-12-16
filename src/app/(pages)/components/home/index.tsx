@@ -1,9 +1,10 @@
-import MainBanner from '@/app/(pages)/home/components/MainBanner'
-import Info from '../../../../public/assets/banner-information.svg'
-import Money from '../../../../public/assets/banner-money.svg'
-import Late from '../../../../public/assets/banner-late.svg'
-import Footer from '@/app/(pages)/home/components/Footer'
-import Contact from '@/app/(pages)/home/components/Contact'
+import React from 'react'
+import MainBanner from '@/app/(pages)/components/home/components/MainBanner'
+import Info from '../../../../../public/assets/banner-information.svg'
+import Money from '../../../../../public/assets/banner-money.svg'
+import Late from '../../../../../public/assets/banner-late.svg'
+import Footer from '@/app/(pages)/components/footer'
+import Contact from '@/app/(pages)/components/home/components/Contact'
 
 export default function HomeComponent() {
   const HEADER_HEIGHT = `64px`
