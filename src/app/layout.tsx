@@ -45,10 +45,6 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ko" className={rootFont.className}>
-      <head>
-        <meta httpEquiv={'pragma'} content={'-1'} />
-        <meta httpEquiv={'expires'} content={'no-cache'} />
-      </head>
       <body>{children}</body>
     </html>
   )

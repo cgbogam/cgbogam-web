@@ -1,7 +1,12 @@
 'use client'
 import Link from 'next/link'
 
-export default function NotFound() {
+interface Props {
+  redirectUrl: string
+}
+
+export default function NotFound(props: Props) {
+  const { redirectUrl = '/' } = props
   return (
     <>
       <div className="w-full h-[100vh] flex justify-center items-center">
@@ -11,7 +16,7 @@ export default function NotFound() {
           <p className="text-[20px] font-medium text-gray-300">
             요청하신 페이지가 사라졌거나, 잘못된 경로를 이용하였습니다.
           </p>
-          <Link href={'/'}>
+          <Link href={redirectUrl}>
             <button className="btn mt-[16px]">메인으로 이동하기</button>
           </Link>
         </div>
