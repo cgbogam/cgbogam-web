@@ -11,8 +11,8 @@ const rootFont = localFont({
 })
 
 export const metadata: Metadata = {
-  title: '청구보감',
-  description: '청구를 하기위해 모인 사람들',
+  title: 'JMDG',
+  description: 'JMDG',
   viewport: {
     width: 'device-width',
     initialScale: 1,
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     url: 'https://cgbogam.github.io/cgbogam-web',
-    title: '청구보감',
-    description: '청구를 하기위해 모인 사람들',
-    siteName: '청구보감',
+    title: 'JMDG',
+    description: 'JMDG',
+    siteName: 'JMDG',
     images: [
       {
         url: 'https://cgbogam.github.io/cgbogam-web/assets/logo.png',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     site: 'https://cgbogam.github.io/cgbogam-web',
-    creator: '청구보감',
+    creator: 'JMDG',
     images: 'https://cgbogam.github.io/cgbogam-web/assets/logo.png',
   },
   icons: {
