@@ -6,11 +6,7 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  plugins: [require('daisyui'), require("tailwindcss-animate")],
-  daisyui: {
-    darkTheme: false,
-    themes: ['light'],
-  },
+  plugins: [require("tailwindcss-animate")],
   theme: {
   	screens: {
   		mobile: '768px',
