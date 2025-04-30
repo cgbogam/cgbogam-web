@@ -39,7 +39,7 @@ export const CONTENTS: {
     {
       id: 5,
       parentId: 0,
-      name: 'Thiazoli-dinedione',
+      name: 'Thiazolidinedione',
       subName: '',
       items: [],
     },
