@@ -1,6 +1,7 @@
 import React, { PropsWithChildren } from 'react'
 import Link from 'next/link'
 import { IMAGE_PREFIX } from '@/app/utils/config'
+import Footer from '@/app/(pages)/components/footer'
 
 export default function Layout({ children }: PropsWithChildren) {
   return (
@@ -27,7 +28,9 @@ export default function Layout({ children }: PropsWithChildren) {
       {/*  </div>*/}
       {/*</div>*/}
       {/*<div className={'w-full pt-[64px]'}>{children}</div>*/}
-      <div className={'w-full'}>{children}</div>
+      <div className={'w-full'}>{children}
+      <Footer/>
+      </div>
     </>
   )
 }

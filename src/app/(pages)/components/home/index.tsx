@@ -69,7 +69,7 @@ export default function HomeComponent() {
           `relative bg-[url('https://cgbogam.github.io/cgbogam-web/assets/contact.jpg')] bg-no-repeat bg-center bg-cover`,
         ].join(' ')}
       />
-      <Footer />
+      {/*<Footer />*/}
     </>
   )
 }
