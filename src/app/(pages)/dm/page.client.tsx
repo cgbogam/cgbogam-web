@@ -180,11 +180,18 @@ export default function DMClient() {
           </h2>
           <ul>
             {result.map((item) => (
-              <li key={item.id} className={'grid grid-cols-5 gap-x-[16px] text-lg'}>
-                {item.checkedDragNames.map((drag) => (
-                  <span key={drag.id} className={'col-span-2 break-all'}>{drag.name}</span>
-                ))}
-                <span className={`whitespace-nowrap ${item.result ? 'text-green-600' : 'text-red-600'}`}>{item.result ? '인정' : '불인정'}</span>
+              <li key={item.id} className={'flex items-center justify-between text-lg border-b border-gray-200 last:border-b-0 px-4 py-2 gap-x-4'}>
+                <div className={'flex items-center justify-start flex-wrap gap-y-2'}>
+                  {item.checkedDragNames.map((drag, idx) => (
+                    <Fragment key={drag.id}>
+                      <div className={'break-all first:ml-0 ml-2'}>
+                        {idx !== 0 && idx < item.checkedDragNames.length && (
+                          <span className={'text-gray-300 text-[20px] mr-2'}>+</span>
+                        )}{drag.name}</div>
+                    </Fragment>
+                  ))}
+                </div>
+                <span className={`whitespace-nowrap min-w-[60px] text-center ${item.result ? 'text-green-600' : 'text-red-600'}`}>{item.result ? '인정' : '불인정'}</span>
               </li>
             ))}
           </ul>
