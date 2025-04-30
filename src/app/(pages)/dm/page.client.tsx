@@ -84,10 +84,18 @@ export default function DMClient() {
 
   return (
     <div className={'p-3'}>
+      <header className={'p-4 bg-red-200 rounded-md'}>
+        * 본 사이트는 순수한 공익적 목적을 위해 운영되며,{' '}
+        <span className={'text-red-600 font-bold'}>어떠한 금전적 대가도 요구하지 않습니다.</span>
+      </header>
       <h1>당뇨약 조합</h1>
       <div className={'flex items-start justify-start gap-16 flex-col mobile:flex-row'}>
         <div>
-          <h2 className={'text-[24px] mb-3 flex items-center justify-start bg-blue-200 rounded-sm p-2 min-w-[300px]'}>
+          <h2
+            className={
+              'text-[24px] mb-3 flex items-center justify-start bg-blue-200 rounded-sm p-2 min-w-[300px]'
+            }
+          >
             <span>조합 선택</span>
           </h2>
           <RadioGroup
@@ -100,12 +108,26 @@ export default function DMClient() {
             }}
           >
             <div className="flex items-center space-x-2">
-              <RadioGroupItem className={'h-5 w-5'} circleClassName={'h-4 w-4'} value="two" id="option-one" />
-              <Label className={'text-lg cursor-pointer'} htmlFor="option-one">2제 요법</Label>
+              <RadioGroupItem
+                className={'h-5 w-5'}
+                circleClassName={'h-4 w-4'}
+                value="two"
+                id="option-one"
+              />
+              <Label className={'text-lg cursor-pointer'} htmlFor="option-one">
+                2제 요법
+              </Label>
             </div>
             <div className="flex items-center space-x-2">
-              <RadioGroupItem className={'h-5 w-5'} circleClassName={'h-4 w-4'} value="three" id="option-two" />
-              <Label className={'text-lg cursor-pointer'} htmlFor="option-two">3제 요법</Label>
+              <RadioGroupItem
+                className={'h-5 w-5'}
+                circleClassName={'h-4 w-4'}
+                value="three"
+                id="option-two"
+              />
+              <Label className={'text-lg cursor-pointer'} htmlFor="option-two">
+                3제 요법
+              </Label>
             </div>
           </RadioGroup>
           <div className={'pt-3 space-y-2'}>
@@ -133,7 +155,11 @@ export default function DMClient() {
                     />
                   ) : (
                     <div className={'relative rounded-[4px] bg-gray-300 p-[10px]'}>
-                      <div className={'w-[60%] h-[2px] bg-gray-100 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2'}></div>
+                      <div
+                        className={
+                          'w-[60%] h-[2px] bg-gray-100 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2'
+                        }
+                      ></div>
                     </div>
                   )}
                   <label
@@ -175,23 +201,40 @@ export default function DMClient() {
           </div>
         </div>
         <div>
-          <h2 className={'text-[24px] mb-3 flex items-center justify-start bg-amber-200 p-2 rounded-sm min-w-[300px]'}>
+          <h2
+            className={
+              'text-[24px] mb-3 flex items-center justify-start bg-amber-200 p-2 rounded-sm min-w-[300px]'
+            }
+          >
             <span>결과</span>
           </h2>
           <ul>
             {result.map((item) => (
-              <li key={item.id} className={'flex items-center justify-between text-lg border-b border-gray-200 last:border-b-0 px-4 py-2 gap-x-4'}>
+              <li
+                key={item.id}
+                className={
+                  'flex items-center justify-between text-lg border-b border-gray-200 last:border-b-0 px-4 py-2 gap-x-4'
+                }
+              >
                 <div className={'flex items-center justify-start flex-wrap gap-y-2'}>
                   {item.checkedDragNames.map((drag, idx) => (
                     <Fragment key={drag.id}>
                       <div className={'break-all first:ml-0 ml-2'}>
                         {idx !== 0 && idx < item.checkedDragNames.length && (
                           <span className={'text-gray-300 text-[20px] mr-2'}>+</span>
-                        )}{drag.name}</div>
+                        )}
+                        {drag.name}
+                      </div>
                     </Fragment>
                   ))}
                 </div>
-                <span className={`whitespace-nowrap min-w-[60px] text-center ${item.result ? 'text-green-600' : 'text-red-600'}`}>{item.result ? '인정' : '불인정'}</span>
+                <span
+                  className={`whitespace-nowrap min-w-[60px] text-center ${
+                    item.result ? 'text-green-600' : 'text-red-600'
+                  }`}
+                >
+                  {item.result ? '인정' : '불인정'}
+                </span>
               </li>
             ))}
           </ul>
