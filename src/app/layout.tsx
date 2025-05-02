@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     siteName: 'DIY 청구',
     images: [
       {
-        url: 'https://cgbogam.github.io/cgbogam-web/assets/logo.png',
+        url: 'https://cgbogam.github.io/cgbogam-web/assets/og-image.png',
       },
     ],
   },
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: 'https://cgbogam.github.io/cgbogam-web',
     creator: 'DIY 청구',
-    images: 'https://cgbogam.github.io/cgbogam-web/assets/logo.png',
+    images: 'https://cgbogam.github.io/cgbogam-web/assets/og-image.png',
   },
   icons: {
     icon: `${IMAGE_PREFIX}/favicon.ico`,
