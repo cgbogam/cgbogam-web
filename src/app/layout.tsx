@@ -12,14 +12,14 @@ const rootFont = localFont({
 })
 
 export const metadata: Metadata = {
-  title: 'JMDG',
-  description: 'JMDG',
+  title: 'DIY청구',
+  description: 'DIY청구',
   openGraph: {
     type: 'website',
     url: 'https://cgbogam.github.io/cgbogam-web',
-    title: 'JMDG',
-    description: 'JMDG',
-    siteName: 'JMDG',
+    title: 'DIY청구',
+    description: 'DIY청구',
+    siteName: 'DIY청구',
     images: [
       {
         url: 'https://cgbogam.github.io/cgbogam-web/assets/logo.png',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     site: 'https://cgbogam.github.io/cgbogam-web',
-    creator: 'JMDG',
+    creator: 'DIY청구',
     images: 'https://cgbogam.github.io/cgbogam-web/assets/logo.png',
   },
   icons: {
