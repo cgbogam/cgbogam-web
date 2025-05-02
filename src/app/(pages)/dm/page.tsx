@@ -7,12 +7,12 @@ export async function generateMetadata() {
     openGraph: {
       title: '당뇨약 조합',
       description: '당뇨약 조합을 쉽게 확인해 보세요.',
-      images: 'https://cgbogam.github.io/cgbogam-web/assets/logo.png',
+      images: 'https://cgbogam.github.io/cgbogam-web/assets/og-image.png',
     },
     twitter: {
       title: '당뇨약 조합',
       description: '당뇨약 조합을 쉽게 확인해 보세요.',
-      images: 'https://cgbogam.github.io/cgbogam-web/assets/logo.png',
+      images: 'https://cgbogam.github.io/cgbogam-web/assets/og-image.png',
     },
   }
 }
