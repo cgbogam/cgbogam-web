@@ -11,9 +11,7 @@ export default function HomeClient(): React.JSX.Element {
   }, [])
   return (
     <div
-      className={`overflow-y-scroll h-[calc(100vh_-_64px)] ${
-        mobile ? '' : 'snap-y snap-mandatory'
-      }`}
+      className={`overflow-y-scroll h-[calc(100vh-64px)] ${mobile ? '' : 'snap-y snap-mandatory'}`}
     >
       <HomeComponent />
     </div>

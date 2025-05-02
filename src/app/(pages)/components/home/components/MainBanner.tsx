@@ -3,7 +3,7 @@ export default function MainBanner() {
 
   return (
     <section
-      className={`relative h-[calc(100vh_-_64px)] flex justify-start items-center mx-auto tablet:px-[80px] ${bgImageClass} snap-start`}
+      className={`relative h-[calc(100vh-64px)] flex justify-start items-center mx-auto tablet:px-[80px] ${bgImageClass} snap-start`}
     >
       <div className={'absolute inset-0 bg-black opacity-70'} />
       <div

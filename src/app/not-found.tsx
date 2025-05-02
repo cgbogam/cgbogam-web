@@ -16,9 +16,11 @@ export default function NotFound(props: Props) {
           <p className="text-[20px] font-medium text-gray-300">
             요청하신 페이지가 사라졌거나, 잘못된 경로를 이용하였습니다.
           </p>
-          <Link href={redirectUrl}>
-            <button className="btn mt-[16px]">메인으로 이동하기</button>
-          </Link>
+          <div className={'mt-[16px]'}>
+            <Link href={redirectUrl}>
+              <button className="btn">메인으로 이동하기</button>
+            </Link>
+          </div>
         </div>
       </div>
     </>

@@ -107,7 +107,7 @@ export default function DMClient() {
               setCaseType(val)
             }}
           >
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center gap-x-2">
               <RadioGroupItem
                 className={'h-5 w-5'}
                 circleClassName={'h-4 w-4'}
@@ -118,7 +118,7 @@ export default function DMClient() {
                 2제 요법
               </Label>
             </div>
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center gap-x-2">
               <RadioGroupItem
                 className={'h-5 w-5'}
                 circleClassName={'h-4 w-4'}
@@ -134,7 +134,7 @@ export default function DMClient() {
             {selectDragList.map((selectDrag) => (
               <Fragment key={selectDrag.id}>
                 {/* 카테고리 */}
-                <div className="items-center flex space-x-2">
+                <div className="items-center flex gap-x-2">
                   {selectDrag.items && selectDrag.items.length === 0 ? (
                     <Checkbox
                       className={'h-5 w-5'}
@@ -172,7 +172,7 @@ export default function DMClient() {
 
                 {/* 아이템 */}
                 {selectDrag?.items?.map((item) => (
-                  <div key={`${item.id}`} className="items-center flex space-x-2 ml-6">
+                  <div key={`${item.id}`} className="items-center flex gap-x-2 ml-6">
                     <Checkbox
                       id={item.id + ''}
                       className={'h-5 w-5'}
