@@ -1,5 +1,5 @@
 import React from 'react'
-import { Metadata } from 'next'
+import { Metadata, Viewport } from 'next'
 import localFont from 'next/font/local'
 import './globals.css'
 import 'normalize.css'
@@ -8,17 +8,12 @@ import { IMAGE_PREFIX } from '@/app/utils/config'
 const rootFont = localFont({
   src: './fonts/Pretendard/PretendardVariable.woff2',
   display: 'swap',
+  weight: '45 920',
 })
 
 export const metadata: Metadata = {
   title: 'JMDG',
   description: 'JMDG',
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    userScalable: false,
-    maximumScale: 1,
-  },
   openGraph: {
     type: 'website',
     url: 'https://cgbogam.github.io/cgbogam-web',
@@ -42,10 +37,18 @@ export const metadata: Metadata = {
   },
 }
 
+export const viewport: Viewport = {
+  themeColor: 'black',
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+}
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="ko" className={rootFont.className}>
-      <body>{children}</body>
+    <html lang="ko">
+      <body className={rootFont.className}>{children}</body>
     </html>
   )
 }
