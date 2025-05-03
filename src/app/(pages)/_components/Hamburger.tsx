@@ -4,12 +4,13 @@ import { cn } from '@/lib/utils'
 import React from 'react'
 
 interface Props {
+  className?: string
   isOpen: boolean
   onClick?: () => void
 }
 
 export default function Hamburger(props: Props) {
-  const { isOpen, onClick } = props
+  const { className, isOpen, onClick } = props
   return (
     <button
       className={cn(

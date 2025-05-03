@@ -6,7 +6,7 @@ import { OverlayProvider } from 'overlay-kit'
 
 export default function Layout({ children }: PropsWithChildren) {
   return (
-    <div className={'pt-[60px] desktop:pt-[110px] w-full'}>
+    <div className={'w-full'}>
       <OverlayProvider>
         <Header />
         {children}

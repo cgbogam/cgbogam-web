@@ -3,7 +3,7 @@ export default function MainBanner() {
 
   return (
     <section
-      className={`relative h-[calc(100vh-64px)] flex justify-start items-center mx-auto tablet:px-[80px] ${bgImageClass} snap-start`}
+      className={`relative h-[calc(100vh)] flex justify-start items-center mx-auto tablet:px-48 ${bgImageClass} snap-start`}
     >
       <div className={'absolute inset-0 bg-black opacity-70'} />
       <div
@@ -12,9 +12,11 @@ export default function MainBanner() {
         }
       >
         <h2 className={'text-[clamp(1.6rem,4vw,4.5rem)] leading-[1.25]'}>
-          우리 병원{' '}
-          <strong className={'text-amber-600 text-[clamp(2.0rem,5.3vw,8rem)]'}>진료비</strong>,
-          <br />잘 받고 있는지 궁금하신가요?
+          찾기 힘들었던{' '}
+          <strong className={'text-blue-400 text-[clamp(2.0rem,5.3vw,8rem)]'}>청구 정보</strong>
+          ,
+          <br />
+          간편하게 찾아보고 싶으신가요?
         </h2>
         <div
           className={
@@ -23,14 +25,13 @@ export default function MainBanner() {
         >
           <span
             className={
-              'underline decoration-2 underline-offset-4 text-[clamp(1.4rem,2.0vw,2.8rem)] mr-[4px] leading-[2rem] text-amber-600 font-bold'
+              'underline decoration-2 underline-offset-4 text-[clamp(1.4rem,2.0vw,2.8rem)] mr-[4px] leading-[2rem] text-blue-400 font-bold'
             }
           >
-            ㈜청구보감
+            DIY 청구
           </span>
-          은 <br className={'inline-block tablet:hidden'} />
-          국내 첫 한방 전문 청구 업체입니다.
-          <p className={'mt-[8px]'}>언제든지 무료로 청구 분석 컨설팅 도와드립니다.</p>
+          는 <br className={'inline-block tablet:hidden'} />
+          청구와 관련된 정보를 무료로 제공합니다.
         </div>
       </div>
     </section>

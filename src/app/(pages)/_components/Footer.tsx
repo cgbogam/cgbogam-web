@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer
       className={
-        'h-[100px] px-3 bg-base-200 flex justify-center items-center snap-start flex-col space-y-4'
+        'px-3 pt-6 pb-14 bg-base-200 flex justify-center items-center snap-start flex-col space-y-4'
       }
     >
       <div>
@@ -17,6 +17,7 @@ export default function Footer() {
             e.stopPropagation()
           }}
         >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="https://myhits.vercel.app/api/hit/https%3A%2F%2Fcgbogam.github.io%2Fcgbogam-web?color=green&label=방문자%20%20&size=medium"
             alt="방문자"

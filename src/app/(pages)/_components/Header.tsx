@@ -11,7 +11,7 @@ import Hamburger from '@/app/(pages)/_components/Hamburger'
 import { useScrollingVisible } from '@/app/utils/useScrollingVisible'
 
 export default function Header() {
-  const { isShow, isTop } = useScrollingVisible({})
+  const { isShow, isTop } = useScrollingVisible({ offset: 70, delay: 10 })
 
   return (
     <header
@@ -19,8 +19,8 @@ export default function Header() {
         'fixed z-[1300] top-0 left-0 px-6 transition-all',
         'flex items-center justify-between',
         'w-full h-[60px] desktop:h-[110px]',
-        isShow ? 'translate-y-0' : '-translate-y-[100%]',
-        isTop ? '!bg-transparent' : 'border-b bg-white',
+        isShow ? 'translate-y-0 opacity-100' : '-translate-y-[100%] opacity-0',
+        isTop ? 'bg-white' : 'bg-white/95',
       )}
     >
       <div className={'relative'}>

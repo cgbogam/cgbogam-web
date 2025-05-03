@@ -19,7 +19,7 @@ export async function generateMetadata() {
 
 export default function DM(): React.JSX.Element {
   return (
-    <main className={'w-full overscroll-none'}>
+    <main className={'w-full overscroll-none pt-[60px] desktop:pt-[110px]'}>
       <DMClient />
     </main>
   )
