@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect, useState } from 'react'
 import { isMobile } from 'react-device-detect'
-import HomeComponent from '@/app/(pages)/components/home'
+import HomeComponent from '@/app/(pages)/_components/home'
 
 type TPageClient = {}
 export default function HomeClient(): React.JSX.Element {
