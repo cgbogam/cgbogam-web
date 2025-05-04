@@ -53,9 +53,6 @@ export default function DMClient() {
       const checkedDrags = CONTENTS.drags.filter((d) => checkedCaseIds.includes(d.id))
       const isIncludeThreeCases = caseThree.includes(checkedThreeCaseText)
 
-      console.log('#### caseThree :: ', caseThree)
-      console.log('#### checkedThreeCaseText :: ', checkedThreeCaseText)
-
       if (isIncludeThreeCases) {
         return [{ id: 0, checkedDragNames: checkedDrags, result: isIncludeThreeCases }]
       } else {
@@ -83,7 +80,7 @@ export default function DMClient() {
   }, [checkedValues, caseType, limit])
 
   return (
-    <div className={'p-3'}>
+    <div className={'pt-4 pb-12 px-4 tablet:pb-80 tablet:px-24'}>
       <header className={'p-4 bg-red-200 rounded-md'}>
         * 본 사이트는 순수한 공익적 목적을 위해 운영되며,{' '}
         <span className={'text-red-600 font-bold'}>어떠한 금전적 대가도 요구하지 않습니다.</span>
