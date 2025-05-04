@@ -9,7 +9,7 @@ export default function HomeClient() {
     setMobile(isMobile)
   }, [])
   return (
-    <div className={`overflow-y-scroll ${mobile ? '' : 'snap-y snap-mandatory'}`}>
+    <div className={`${mobile ? '' : 'snap-y snap-mandatory'}`}>
       <HomeComponent />
     </div>
   )
