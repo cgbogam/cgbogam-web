@@ -4,8 +4,11 @@ import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group'
 import { Label } from '@/components/ui/label'
 import { CONTENTS } from '@/app/(pages)/dm/data'
 import { Checkbox } from '@/components/ui/checkbox'
+import FloatingSearch from '@/app/(pages)/dm/FloatingSearch'
+import { SearchDialog } from '@/app/(pages)/dm/SearchDialog'
 
 export default function DMClient() {
+  const [isOpenSearch, setIsOpenSearch] = useState<boolean>(false)
   const [caseType, setCaseType] = useState<string>('two')
 
   const selectDragList = useMemo(() => {
@@ -80,7 +83,7 @@ export default function DMClient() {
   }, [checkedValues, caseType, limit])
 
   return (
-    <div className={'pt-4 pb-12 px-4 tablet:pb-80 tablet:px-24'}>
+    <div className={'pt-4 pb-12 px-4 tablet:pb-80 tablet:px-24 relative'}>
       {/* header 영역 */}
       <div className={'flex flex-col items-start justify-start mb-8 leading-[1.25] break-keep'}>
         <div className={'flex items-end justify-start flex-wrap gap-x-4 gap-y-2'}>
@@ -269,7 +272,13 @@ export default function DMClient() {
           </div>
         </div>
       </div>
-      {/*<pre className={'text-[10px]'}>{JSON.stringify(CONTENTS, null, 2)}</pre>*/}
+      <FloatingSearch
+        disabled={isOpenSearch}
+        onClick={() => {
+          setIsOpenSearch(true)
+        }}
+      />
+      <SearchDialog isOpen={isOpenSearch} close={() => setIsOpenSearch(false)} />
     </div>
   )
 }
