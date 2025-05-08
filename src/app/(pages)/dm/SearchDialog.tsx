@@ -82,6 +82,7 @@ export function SearchDialog(props: Props) {
             <Input
               className={'rounded-r-none'}
               value={searchKeyword}
+              placeholder={'제품명, 제품코드를 입력해 주세요'}
               autoFocus={true}
               onChange={(e) => setSearchKeyword(e.target.value)}
               onKeyDown={(e) => {
